@@ -1,0 +1,24 @@
+{
+  "name": "gnv-quiz",
+  "version": "1.0.0",
+  "description": "quiz app with mongodb backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/msholty-fd/gnv-quiz.git"
+  },
+  "author": "Michael Sholty",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/msholty-fd/gnv-quiz/issues"
+  },
+  "homepage": "https://github.com/msholty-fd/gnv-quiz#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mongodb": "^3.2.2"
+  }
+}
