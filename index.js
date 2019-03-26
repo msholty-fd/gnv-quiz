@@ -24,7 +24,10 @@ app.get("/questions", (req, res) => {
       .find()
       .toArray();
 
-    return res.json(questions);
+    const random_question =
+      questions[Math.floor(Math.random() * questions.length)];
+
+    return res.json([random_question]);
   });
 });
 
