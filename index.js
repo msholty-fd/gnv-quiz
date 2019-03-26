@@ -9,8 +9,7 @@ app.get("/questions", (req, res) => {
   const MongoClient = require("mongodb").MongoClient;
 
   // Connection URL
-  const url =
-    "mongodb://heroku_j1nq77kg:mmplvif6i2n82dqsq67iva33a8@ds221416.mlab.com:21416/heroku_j1nq77kg";
+  const url = process.env.MONGODB_URI;
 
   // Database Name
   const dbName = "heroku_j1nq77kg";
