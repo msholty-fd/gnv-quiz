@@ -12,7 +12,7 @@ app.get("/questions", (req, res) => {
   const url = process.env.MONGODB_URI;
 
   // Database Name
-  const dbName = "heroku_j1nq77kg";
+  const dbName = "heroku_nndjz5dt";
 
   // Create a new MongoClient
   const client = new MongoClient(url, { useNewUrlParser: true });
