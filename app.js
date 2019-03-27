@@ -9,6 +9,7 @@ async function getQuestions() {
   for (var index in question.answers) {
     const answer = question.answers[index];
     const input = document.createElement("input");
+    input.isCorrect = answer.isCorrect;
     const li = document.createElement("li");
     const label = document.createElement("label");
     input.type = "radio";
@@ -20,5 +21,14 @@ async function getQuestions() {
     li.appendChild(input);
     li.appendChild(label);
     answers.appendChild(li);
+  }
+}
+
+function respondToQuestion() {
+  for (index in answers.children) {
+    var element = answers.children[index]
+    if (element.children[0].checked && element.children[0].isCorrect) {
+      alert('Correct!')
+    } 
   }
 }
